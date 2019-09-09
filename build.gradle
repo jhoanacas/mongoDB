@@ -30,13 +30,10 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.8.RELEASE'
 	compile('org.springframework.cloud.stream.app:spring-cloud-starter-stream-source-mongodb')
-
 	providedCompile group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
-
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-
-
 
 }
 
